@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoyaLand</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        #play-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #play-button:hover {
+      background-color: #45a049;
+    }
+    </style>
+</head>
+<body>
+    <div id="main-header">
+        <h1>HIIIIIIIIIIIIIIIIIII</h1>
+        <h2>welcome to this custom website that i built for you hehe :3</h2>
+    </div>
+    <div id="options-menu">
+        <h3>What would Ponyo like to do today?</h3>
+        <button onclick="location.href='play.html'" class="btn" id="play">🎮 PLAY! 🎮</button>
+        <button onclick="location.href='letter.html'" class="btn" id="letter">💌 READ A LETTER! 💌</button>
+        <button onclick="location.href='poem.html'" class="btn" id="poem">✍️ READ A POEM! ✍️</button>
+        <button onclick="location.href='qna.html'" class="btn" id="qna">❓ SOYA QUIZ ❓</button>
+    </div>    
+    <img src="kuromi.png"/>
+    <button id="play-button">Play Music</button>
+    <audio id="background-audio" autoplay loop>
+        <source src="Athletic-Theme-Remix.mp3" type="audio/mpeg">
+        <source src="Athletic-Theme-Remix.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        document.getElementById("play-button").addEventListener("click", function () {
+        const audio = document.getElementById("background-audio");
+        audio.play(); 
+        this.style.display = "none"; 
+        });
+    </script>
+</body>
+</html>

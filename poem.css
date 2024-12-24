@@ -1,0 +1,25 @@
+body{
+    background-image: url("winter_bg.jpg");
+}
+.poem-container{
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    left: 36%;
+    top: 5%;
+}
+h1{
+    font-family: "Tangerine", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4.5rem;
+    text-align: center;
+}
+p{
+    font-family: "Cormorant Infant", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.2rem;
+    padding: 2%;
+}

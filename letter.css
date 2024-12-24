@@ -1,0 +1,19 @@
+body{
+    background-image: url("letter_bg.jpg");
+}
+.letter-container{
+    height: fit-content;
+    width: fit-content;
+    background-color: aliceblue;
+    position: absolute;
+    left: 33%;
+    top: 3.75%;
+}
+p{
+    font-family: "Cormorant Infant", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2rem;
+    padding-left: 2%;
+    padding-right: 2%;
+}

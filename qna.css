@@ -1,0 +1,45 @@
+body{
+    background-color: #FFFDCB;
+    color: #FF7EE2;
+}
+#outer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.correct {
+    background-color: green;
+    color: white;
+}
+.wrong {
+    background-color: red;
+    color: white;
+}
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    height: 10vh;
+    width: fit-content;
+    background-color: #FF8E8F;
+}
+#question-title{
+    font-family: "Noto Sans", serif;
+    font-size: 250%;
+    font-weight: 600;
+    font-style: normal;
+}
+#question-text{
+    font-family: "Noto Sans", serif;
+    font-size: 200%;
+    font-weight: 600;
+    font-style: normal;
+}
+img{
+    height: 45vh;
+    position: absolute;
+    left: 36%;
+    top: 50%;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoyaLand</title>
+    <link rel="stylesheet" href="letter.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+        #play-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 5%;
+    }
+    #play-button:hover {
+      background-color: #45a049;
+    }
+    </style>
+</head>
+<body>
+    <div class="letter-container">
+        <p>
+            Dear Ponyo,<br/>
+            i hope this letter finds you in good health.<br/>
+            its cold asf isnt it? my fingers are freezing<br/>
+            as i am typing this. anyways i hope everything<br/>
+            is well at your home as well, your parents, sister, dadi,<br/>
+            i hope theyre all good. i was free at home and i <br/>
+            wanted to do something that would make you happy,<br/>
+            so i made this lil project hehe. i know it may not be<br/>
+            the best website ever, but i built it using what limited<br/>
+            knowledge i had. also i cant put any sensitive or private<br/>
+            info here as when this goes live, it will be out there for<br/>
+            the whole internet to see and access. anyways. i just miss<br/>
+            you a lot rn and i really hope i get to see you soon, and give<br/>
+            you a physical present as well. take care of your health,<br/>
+            dont fall sick in this harsh weather. remember to stay hydrated!<br/>
+            i just want you to know that no matter what anyone says<br/>
+            or no matter who is against you, i will always support you<br/>
+            and stand by you. i promise to always be there for you,<br/>
+            love you, care for you, and protect you from everything.<br/>
+            i will never let anything or anyone come between us.<br/>
+            the distance between us is painful sometimes, but as they<br/>
+            say, "the longer the wait, the sweeter the kiss". i <br/>
+            believe i'll get to see you soon, and i am waiting patiently for that day.<br/><br/>
+            i hope you liked this small gift from me!<br/>
+            i love you so much bbg take care of yourself okay<br/>
+            love from soya mwaa &lt3
+        </p>
+    </div>
+    <button id="play-button">Play Music</button>
+    <audio id="background-audio" autoplay loop>
+        <source src="heart-to-heart.mp3" type="audio/mpeg">
+        <source src="heart-to-heart.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        document.getElementById("play-button").addEventListener("click", function () {
+        const audio = document.getElementById("background-audio");
+        audio.play(); 
+        this.style.display = "none"; 
+        });
+    </script>
+</body>
+</html>

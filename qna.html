@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoyaLand</title>
+    <link rel="stylesheet" href="qna.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        #play-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 5%;
+    }
+    #play-button:hover {
+      background-color: #45a049;
+    }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <h1 id="question-title">SOYA QUIZ</h1>
+        <p id="question-text">Loading question...</p>
+        <div id="options-container"></div>
+    </div>
+    <img src="rose-emoji.png"/>
+    <button id="play-button">Play Music</button>
+    <audio id="background-audio" autoplay loop>
+        <source src="exploration.mp3" type="audio/mpeg">
+        <source src="exploration.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="qna.js"></script>
+    
+    <script>
+        document.getElementById("play-button").addEventListener("click", function () {
+        const audio = document.getElementById("background-audio");
+        audio.play(); 
+        this.style.display = "none"; 
+        });
+    </script>
+</body>
+</html>

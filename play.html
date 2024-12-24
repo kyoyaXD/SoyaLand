@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoyaLand</title>
+    <link href="play.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        #play-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      position: absolute;
+      bottom: 5%;
+    }
+    #play-button:hover {
+      background-color: #45a049;
+    }
+    </style>
+</head>
+<body>
+    <div id="main-header">
+        <h1>Here are some fun little projects I built, try 'em out!</h1>
+        <h2>(PS: I didn't build all these (completely) on my own🫢)</h2>
+    </div>
+    <div id="list_of_activities">
+        <button onclick="location.href='https://kyoyaxd.github.io/simon-game/'" class="btn" id="simon">SIMON GAME</button>
+        <button onclick="location.href='https://kyoyaxd.github.io/dice-game/'" class="btn" id="dice">DICE GAME</button>
+        <button onclick="location.href='https://kyoyaxd.github.io/js-drum-kit/'" class="btn" id="drums">DRUM KIT</button>
+    </div>
+    <img src="kuromi2.png"/>
+    <button id="play-button">Play Music</button>
+    <audio id="background-audio" autoplay loop>
+        <source src="cats.mp3" type="audio/mpeg">
+        <source src="cats.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        document.getElementById("play-button").addEventListener("click", function () {
+        const audio = document.getElementById("background-audio");
+        audio.play(); 
+        this.style.display = "none"; 
+        });
+    </script>
+</body>
+</html>
